@@ -3,9 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- estilos del plugin -->
+    <link
+      rel="stylesheet"
+      href="chatWhastapp/plugin/components/Font Awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/chatWhastapp/plugin/whatsapp-chat-support.css"
+    />
+
+    <title>Pare Pan</title>
   </head>
   <body>
-    <a href="https://api.whatsapp.com/send?phone=3218507302"></a>
+    <nav class="barra_navegacion">
+      <ul>
+
+      </ul>
+      <div></div>
+      <img src="/imagenes/index/imagenPincipal.jpeg" alt="" />
+      <p>Panaderia Pare Pan</p>
+    </div>
+
+      
+    </nav>
+    <head></head>
+    <main></main>
+
+    <!-- Button Whatsapp Structure -->
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+      <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+      </div>
+
+      <div class="wcs_popup">
+        <div class="wcs_popup_close">
+          <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+          <span class="fa fa-whatsapp"></span>
+          <strong>Servicio al cliente</strong>
+
+          <div class="wcs_popup_header_description">
+            Bienvenidos a nuestra familia ParePan ¿En que te podemos ayudar?
+          </div>
+        </div>
+        <div
+          class="wcs_popup_input"
+          data-number="573022735570"
+          data-availability='{ "monday":"00:00-22:30", "tuesday":"00:00-22:30", "wednesday":"00:00-22:30", "thursday":"00:00-22:30", "friday":"00:00-22:30", "saturday":"00:00-22:30", "sunday":"00:00-22:30" }'
+        >
+          <input type="text" placeholder="Escribir pregunta!" />
+          <i class="fa fa-play"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+          <img src="/imagenes/index/manuelito.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- jQuery 1.8+ -->
+    <script src="/chatWhastapp/plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+    <!-- Plugin JS file -->
+    <script src="/chatWhastapp/plugin/components/moment/moment.min.js"></script>
+    <script src="/chatWhastapp/plugin/components/moment/moment-timezone-with-data.min.js"></script>
+    <!-- spanish language (es) -->
+    <script src="/chatWhastapp/plugin/whatsapp-chat-support.js"></script>
+    <script>
+      $("#button-w").whatsappChatSupport({
+        defaultMsg: "",
+      });
+    </script>
   </body>
 </html>
