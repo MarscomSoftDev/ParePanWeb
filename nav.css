@@ -112,6 +112,7 @@ body {
   height: 90%;
   object-fit: cover;
   z-index: -1;
+  /* opacity: 85%; */
 }
 
 @media (max-width: 768px) {
@@ -155,14 +156,25 @@ body {
     height: 30px;
   }
   .barra_navegacion p {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   .barra_navegacion .imagenPrincipal {
     height: auto;
-    width: 150px;
+    width: 90px;
   }
   .imagenBanner img {
     height: 60%; /* Ajusta la altura en pantallas muy pequeñas */
+  }
+}
+
+@media (max-width: 360px) {
+  .barra_navegacion {
+    display: flex;
+    justify-content: center;
+  }
+  .barra_navegacion img {
+    width: 10px;
+    height: 10px;
   }
 }

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Boldy Skyline";
+  src: url("/fonts/BoldySkyland.ttf") format("truetype");
+}
+
 .seccionDivCentral {
   display: flex;
   justify-content: center;
@@ -19,6 +24,7 @@
   font-weight: bold;
   color: #ffffff;
   margin-top: 10em;
+  font-family: "Inika", serif;
 }
 
 .seccionDivCentral-frase2 {
@@ -26,13 +32,29 @@
   font-weight: bold;
   color: #ffffff;
   margin-top: 1em;
+  font-family: "Inika", serif;
 }
 
 .seccionDivCentral-frase3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 6vw; /* Texto más grande para el título */
   color: #ffffff; /* Ajusta el color según tu diseño */
   margin-top: 10%;
   margin-bottom: 5%;
+  font-family: "Boldy Skyline", sans-serif;
+  text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black,
+    0.5px 0.5px 0 black;
+  /* background-color: aqua; */
+}
+
+.seccionDivCentral-frase3 img {
+  width: 12vh;
+  height: 12vh;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
@@ -46,11 +68,31 @@
   }
 }
 
+@media (max-width: 580px) {
+  .seccionDivCentral-frase3,
+  .seccionDivCentral-frase2,
+  .seccionDivCentral-frase1 {
+    font-size: 2.8vw; /* Aumenta el tamaño de las frases para pantallas pequeñas */
+  }
+  .seccionDivCentral-frase3 {
+    font-size: 8.5vw;
+  }
+}
+
 @media (max-width: 480px) {
   .seccionDivCentral-frase3,
   .seccionDivCentral-frase2,
   .seccionDivCentral-frase1 {
     font-size: 3.5vw; /* Aumenta el tamaño de las frases para pantallas pequeñas */
+    margin-top: 0;
+  }
+
+  .seccionDivCentral-frase3 {
+    font-size: 12vw;
+  }
+  .seccionDivCentral {
+    margin-top: 25%;
+    padding-bottom: 5%;
   }
 }
 
@@ -61,7 +103,19 @@
     font-size: 3.8vw; /* Aumenta el tamaño de las frases para pantallas pequeñas */
   }
 
+  .seccionDivCentral-frase3 {
+    font-size: 12vw;
+  }
+
   .seccionDivCentral {
-    margin-top: 12%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .seccionDivCentral-frase3 img {
+    width: 5vh;
+    height: 5vh;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
