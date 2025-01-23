@@ -13,9 +13,14 @@ body {
 
 /* Barra de navegación */
 .barra_navegacion {
-  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .barra_navegacion .imagenPrincipal img {
@@ -53,7 +58,24 @@ body {
   align-items: center;
   gap: 5px;
   padding: 10px;
-  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  /* transition: background-color 0.3s ease, border-radius 0.3s ease; */
+}
+.barra_navegacion a::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #d4ffd6 0%, transparent 50%);
+  transition: top 0.6s ease;
+}
+
+.barra_navegacion a:hover::before {
+  top: 0;
 }
 
 /* Efecto hover en los enlaces */
@@ -75,7 +97,21 @@ body {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
-  color: #757575;
+  color: #ffffff;
+}
+
+.barra_navegacion a:hover p {
+  color: black;
+}
+
+.imagenBanner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
