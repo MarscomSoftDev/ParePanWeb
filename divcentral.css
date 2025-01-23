@@ -1,0 +1,55 @@
+.seccionDivCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.seccionDivCentral ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.seccionDivCentral-frase1 {
+  font-size: 1.5vw; /* Ajusta el tamaño del texto según tu diseño */
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10em;
+}
+
+.seccionDivCentral-frase2 {
+  font-size: 2vw; /* Ajusta el tamaño del texto según tu diseño */
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 1em;
+}
+
+.seccionDivCentral-frase3 {
+  font-size: 6vw; /* Texto más grande para el título */
+  color: #ffffff; /* Ajusta el color según tu diseño */
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .seccionDivCentral-frase1,
+  .seccionDivCentral-frase2 {
+    font-size: 2vw; /* Aumenta el tamaño de las frases en pantallas pequeñas */
+  }
+
+  .seccionDivCentral {
+    gap: 1.5em; /* Reduce el espacio entre los elementos en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .seccionDivCentral-frase3,
+  .seccionDivCentral-frase2,
+  .seccionDivCentral-frase1 {
+    font-size: 3.5vw; /* Aumenta el tamaño de las frases para pantallas pequeñas */
+  }
+}

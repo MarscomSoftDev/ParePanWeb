@@ -109,7 +109,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 90%;
   object-fit: cover;
   z-index: -1;
 }
@@ -133,6 +133,9 @@ body {
   }
   .barra_navegacion p {
     font-size: 12px;
+  }
+  .imagenBanner img {
+    height: 70%; /* Ajusta la altura en pantallas pequeñas */
   }
 }
 
@@ -159,5 +162,8 @@ body {
   .barra_navegacion .imagenPrincipal {
     height: auto;
     width: 150px;
+  }
+  .imagenBanner img {
+    height: 60%; /* Ajusta la altura en pantallas muy pequeñas */
   }
 }
