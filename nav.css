@@ -149,7 +149,6 @@ body {
   .barra_navegacion a {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10px;
   }
   .barra_navegacion img {
     width: 30px;
